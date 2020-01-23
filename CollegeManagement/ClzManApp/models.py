@@ -7,7 +7,16 @@ class Result(models.Model):
     StudentID = models.CharField(max_length=50)
 
     def __str__(self):
-        return f"{self.StudentID} has {self.result} in {self.ModuleName}"
+        return f"{self.StudentID} is {self.result} in {self.ModuleName}"
+
+class Teachers(models.Model):
+    TeacherID=models.CharField(max_length=50)
+    TeacherName=models.CharField(max_length=40)
+    email=models.EmailField(max_length=55)
+    department=models.CharField(max_length=30)
+
+    def __str__(self):
+        return self.TeacherName
 
 class Class(models.Model):
     ClassName = models.CharField(max_length=128)
@@ -28,16 +37,6 @@ class Students(models.Model):
 
     def __str__(self):
         return self.StudentName
-
-
-class Teachers(models.Model):
-    TeacherID=models.CharField(max_length=50)
-    TeacherName=models.CharField(max_length=40)
-    email=models.EmailField(max_length=55)
-    department=models.CharField(max_length=30)
-
-    def __str__(self):
-        return self.TeacherName
     
 
 class Modules(models.Model):
