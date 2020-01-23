@@ -1,0 +1,32 @@
+#logo{
+    width: 350px;
+    height: 100px;
+    float: left;
+    padding: 10px;
+}
+.pagename{
+    margin-top: 10px;
+    margin-left: 100px;
+    padding-top: 30px;
+    float: left;
+}
+.search-bar{
+    float: left;
+    margin-left: 100px;
+    margin-top: 10px;
+    padding-top: 30px; 
+    border-style: solid;
+    border-color: green;
+    border: 2px solid green;
+}
+#collegephoto{
+    height: 683px;
+    width: 1024px;
+    padding-top: 100px;
+    padding-right: 10%;
+}
+.staffstudent-list{
+    float: right;
+    margin-top: 40px;
+    margin-right: 50%;
+} 
