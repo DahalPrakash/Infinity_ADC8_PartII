@@ -10,6 +10,10 @@
     padding-top: 30px;
     float: left;
 }
+#for-login-signup{
+    float: right;
+    margin-right: 10px;
+}
 
 #collegephoto{
     height: 683px;
