@@ -4,13 +4,12 @@ from django.db import models
 class Result(models.Model):
     ModuleName=models.CharField(max_length=30)
     result=models.CharField(max_length=50)
-    StudentID = models.CharField(max_length=50)
+    StudentName = models.CharField(max_length=50)
 
     def __str__(self):
-        return f"{self.StudentID} is {self.result} in {self.ModuleName}"
+        return f"{self.StudentName} is {self.result} in {self.ModuleName}"
 
 class Teachers(models.Model):
-    TeacherID=models.CharField(max_length=50)
     TeacherName=models.CharField(max_length=40)
     email=models.EmailField(max_length=55)
     department=models.CharField(max_length=30)
@@ -20,7 +19,6 @@ class Teachers(models.Model):
 
 class Class(models.Model):
     ClassName = models.CharField(max_length=128)
-    TeacherID = models.CharField(max_length=50)
     StudentGroupName = models.CharField(max_length=40)
     teacher_class = models.ForeignKey(Teachers, on_delete=models.CASCADE, related_name='classes')
 
@@ -28,7 +26,6 @@ class Class(models.Model):
         return self.ClassName
 
 class Students(models.Model):
-    StudentID=models.CharField(max_length=50)
     StudentName=models.CharField(max_length=40)
     email=models.EmailField(max_length=50)
     standard=models.CharField(max_length=50)
@@ -40,7 +37,6 @@ class Students(models.Model):
     
 
 class Modules(models.Model):
-    ModuleID=models.CharField(max_length=30)
     ModuleName=models.CharField(max_length=30)
     studentID_modules=models.ManyToManyField(Students, related_name='study_modules')
     teacherID_modules=models.ManyToManyField(Teachers,  related_name='teach_modules')
