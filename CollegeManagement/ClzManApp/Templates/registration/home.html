@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>home page</title>
+</head>
+<body>
+   <p><h1>This is home page</h1> <br>
+    {% if request.user.is_authenticated %}
+    <h2>Welcome {{user}} you are in home page !!!</h2> 
+    {% else %}
+        Unauthorized
+    {% endif %}<br>
+    <a href="logout">logout </a> </p>
+</body>
+</html>
