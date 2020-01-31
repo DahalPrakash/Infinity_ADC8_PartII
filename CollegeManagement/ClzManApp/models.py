@@ -46,7 +46,7 @@ class Modules(models.Model):
     def __str__(self):
         return self.ModuleName    #returns ModuleName string when Modules class object is being called
 
-class Attendance(models.Model)
+class Attendance(models.Model):
     StudentName = models.CharField(max_length=40)
     ModuleName = models.CharField(max_length=30)
     Attendance = models.CharField(max_length=30)
