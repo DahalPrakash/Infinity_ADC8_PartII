@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>List of student</title>
+</head>
+<body>
+    <h1 style="color: green;"> List of Students</h1>
+    {% for student in students %}
+    student id : {{student.StudentID}} <br>
+    student name : {{student.StudentName}} <br>
+    student email : {{student.email}}<br>
+    student standard : {{student.standard}}<br>
+    <a href="edit/{{student.id}}" style="color: red;">Update this</a> <br>
+    ======================================== <br>
+    {% empty %}
+        There are no student available.
+    {% endfor %}
+</body>
+</html>

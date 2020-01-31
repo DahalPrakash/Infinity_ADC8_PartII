@@ -21,5 +21,9 @@ urlpatterns = [
 ]
 
 urlpatterns += [
-    path('ClzManApp/',include('ClzManApp.urls'))
+    path('restapi/',include('restapi.urls')),
 ]
+urlpatterns += [
+    path('ClzManApp/',include('ClzManApp.urls')),
+]
+
