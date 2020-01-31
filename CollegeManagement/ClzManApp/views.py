@@ -42,8 +42,6 @@ def view_student_form(request):
 def view_studentdata_save(request):
     if request.method == "POST":
         get_all = request.POST
-        get_StudentID = request.POST['student_StudentID']
-        print(type(get_StudentID))
         get_StudentName = request.POST['student_StudentName']
         get_email = request.POST['student_email']
         print(get_StudentID)
@@ -68,8 +66,7 @@ def view_update_form_data_in_db(request, ID):
     student_obj = Students.objects.get(id=ID)
     print(student_obj)
     student_form_data = request.POST
-    print(student_form_data)
-    student_obj.StudentID = request.POST['student_StudentID']
+    print(student_form_data) 
     student_obj.StudentName =request.POST['student_StudentName']
     student_obj.email = request.POST['student_email']
     student_obj.standard = request.POST['student_standard']

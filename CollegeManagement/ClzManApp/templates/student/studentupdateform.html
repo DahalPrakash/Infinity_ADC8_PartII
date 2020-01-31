@@ -9,7 +9,6 @@
 <body>
     <form method="POST" action="update/{{student.id}}">
         {% csrf_token %}
-        Update Studentid: <input name="student_StudentID" type="text" value ={{student.StudentID}}> <br>
         Update StudentName: <input name="student_StudentName" type="text" value={{student.StudentName}}> <br>
         Update email: <input name="student_email" type="email" value={{student.email}}> <br>
         Update standard: <input name="student_standard" type="text" value={{student.standard}}> <br>
