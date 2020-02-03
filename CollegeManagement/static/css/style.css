@@ -10,10 +10,6 @@
     padding-top: 30px;
     float: left;
 }
-#for-login-signup{
-    float: right;
-    margin-right: 10px;
-}
 
 #collegephoto{
     height: 683px;
@@ -21,11 +17,6 @@
     padding-top: 100px;
     padding-right: 10%;
 }
-.staffstudent-list{
-    float: right;
-    margin-top: 40px;
-    margin-right: 50%;
-}
-.search-bar{
-    padding: 30%;
-}
+
+
+

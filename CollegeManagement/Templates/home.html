@@ -7,7 +7,7 @@
     <title>Herald College Kathmandu</title>
     <link rel="stylesheet" type="text/css" href="..\static\css\style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="..\static\css\bootstrap.min.css">
 </head>
 <body>
     <header>
@@ -17,17 +17,18 @@
             </div>
             <div class="pagename">
                 <nav>
-                    <a href="home.html" class="btn btn-success">Home</a>
-                    <a href="students.html" class="btn btn-success">Students</a>
-                    <a href="staff.html" class="btn btn-success">Staff</a>
+                    <a href="home.html" class="btn btn-primary">Home</a>
+                    <a href="academic.html" class="btn btn-success">Academics</a>
                     <a href="contact.html" class="btn btn-success">Contact</a>
                     <a href="about.html" class="btn btn-success">About</a>
-                    <a href="search.html" class="btn btn-success">Search</a>
+                    <a href="search.html" class="btn btn-success">Student Stories</a>
+                    <a href="admissionform.html" class="btn btn-success">Admission Form</a>
                 </nav>    
             </div>
             <div id="for-login-signup">
                 <a href="login.html" class="btn btn-primary">Login</a>
                 <a href="signup.html" class="btn btn-primary">signup</a>
+                
 
             </div>
            
@@ -35,17 +36,139 @@
     </header>
     <showcase>
         <div class="image">
-            <img src="..\static\Images\college-photo.jpg" alt="Herald College" id="collegephoto">
-            <a >download</a>
+            <div>
+                <img src="..\static\Images\college-photo.jpg" alt="Herald College" id="collegephoto">
+            </div>
         </div>
+
     </showcase>
+    <div id="textbox">
+        <div id="textbox1">
+            <h5>ACADEMIC PRESTIGE</h5><br>
+            <h6>
+                <p>Teaching facilities and infrastructure meet the international standards set by the university partner.</p>
+            </h6>
+        </div>
+        <div id="textbox2">
+            <h5>RECOGNITION</h5><br>
+            <h6>
+                <p>We are direct partners of a prestigious UK University, with international faculties and guest lecturers.</p>
+            </h6>
+        </div>
+        <div id="textbox1">
+            <h5>EXPERIENCED FACULTY</h5><br>
+            <h6>
+                <p>All teaching faculties are approved by the relevant awarding bodies (i.e., iAcademy and University of Wolverhampton)</p>
+            </h6>
+        </div>
+        <div id="textbox2">
+            <h5>CERTIFICATION</h5><br>
+            <h6>
+                <p>Upon successful completion of the course, the student shall receive Bachelor degree certificate from the University of Wolverhampton.</p>
+            </h6>
+        </div>
+    </div>
+
+    <div id="course">
+        <div id="course-header">
+            <center><h1>Our Courses</h1></center>
+        </div>
+        <div id="course1">
+            <center><h1>BBA</h1></center>
+            <h8>BSc(Hons) International Business Management</h8>
+        </div>
+        <div id="course2">
+            <center><h1>BIT</h1></center>
+            <h8>BSc(Hons) Computer Science</h8>
+        </div>
+
+    </div>
+    
     <style>
+        #logo{
+    width: 350px;
+    height: 100px;
+    float: left;
+    padding: 10px;
+}
+.pagename{
+    margin-top: 10px;
+    margin-left: 100px;
+    padding-top: 30px;
+    float: left;
+}
+    #collegephoto{
+    height: 683px;
+    width: 1024px;
+    padding-top: 100px;
+    padding-right: 10%;
+}
     #for-login-signup{
     float: right;
     margin-right: 100px;
     padding-top: 20px;
     }
+    #textbox{
+        margin-left: 170px;
+        float: left;
+    }
+    #textbox1{
+    margin-top: 30px;
+	float: left;
+	padding: 25px;
+	background-color: rgba(51, 148, 37);
+	height: 200px;
+	width: 300px;
+	margin-left: 0px;
+	border-radius: 0px;
+    color: white;
+   
+    }
+    #textbox1:hover{
+    box-shadow: 0 0 4px 4px #bdb5b5;
+    }
+    #textbox2{
+    margin-top: 30px;
+	float: left;
+	padding: 25px;
+	background-color: rgba(72, 84, 71 );
+	height: 200px;
+	width: 300px;
+	margin-left: 0px;
+	border-radius: 0px;
+    color: white;
+    
+    }
+    #textbox2:hover{
+    box-shadow: 0 0 4px 4px green;
+    }
+    #course{
+        float: left;
+        margin-left: 23%;
+        height: 500px;
+        width: 800px;
+        margin-top: 40px;
+    }
+    #course1 {
+        float: left;
+        color: green;
+        margin-top: 100px;
+        font-weight: bold;
+        font-size: large;
+
+    }
+    #course2 {
+        float: right;
+        color: green;
+        margin-top: 100px;
+        font-weight: bold;
+        font-size: large;
+
+    }
+   
+
     </style>
+    
 
 </body>
 </html>

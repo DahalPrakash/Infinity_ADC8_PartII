@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="..\static\css\style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="..\static\css\bootstrap.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -18,21 +18,126 @@
             <div class="pagename">
                 <nav>
                     <a href="home.html" class="btn btn-success">Home</a>
-                    <a href="students.html" class="btn btn-success">Students</a>
-                    <a href="staff.html" class="btn btn-success">Staff</a>
+                    <a href="academic.html" class="btn btn-success">Academics</a>
                     <a href="contact.html" class="btn btn-success">Contact</a>
                     <a href="about.html" class="btn btn-success">About</a>
-                    <a href="search.html" class="btn btn-success">Search</a>
+                    <a href="search.html" class="btn btn-primary">Student Stories</a>
+                    <a href="admissionform.html" class="btn btn-success">Admission Form</a>
 
                 </nav>    
             </div>
             
         </div>
     </header>
-    
-    <div class="search-bar" >
-        <input type="text" placeholder="Search.." name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
+    <div id="stories1">
+    <div class="stories-info">
+		Student Stories
+	</div>
+    <div class="stories">
+		<div class="stories-box">
+			<div class="stories-box1">
+				<div class="student-img">
+					<div>
+						<img src="..\static\Images\student1.jpg" class="student-photo">
+					</div>
+				</div>
+				<div class="stories-body">
+					<h2 class="student-name">Mr.Prakash Dahal</h2>
+                    <p class="student-post">BSc(Hons)Computer Science (2017) </p>
+                    <p class="student-post1">"The Learning methodology at University Of Wolverhamption, UK was similar to what we culture in Herald College Kathmandu which helped us excel in our 15-days trip"</p>
+				</div>
+			</div>
+		</div>
+		
+
     </div>
+    <div class="stories">
+		<div class="stories-box">
+			<div class="stories-box1">
+				<div class="student-img">
+					<div>
+						<img src="..\static\Images\student2.jpg" class="student-photo">
+					</div>
+				</div>
+				<div class="stories-body">
+					<h2 class="student-name">Mrs. Punam Sherpa</h2>
+                    <p class="student-post">BSc(Hons)Computer Science (2017) </p>
+                    <p class="student-post1">"The Learning methodology at University Of Wolverhamption, UK was similar to what we culture in Herald College Kathmandu which helped us excel in our 15-days trip"</p>
+				</div>
+			</div>
+		</div>
+		
+
+    </div>
+</div>
+    
+    <style>
+    #logo{
+    width: 350px;
+    height: 100px;
+    float: left;
+    padding: 10px;
+}
+.pagename{
+    margin-top: 10px;
+    margin-left: 100px;
+    padding-top: 30px;
+    float: left;
+}
+#stories1{
+    float: left;
+    height: 1000px;
+    width: 100%;
+}
+.stories{
+    height: 800px;
+    float: left;
+    
+}
+.stories-box{
+	padding: 35px;
+	width: 400px;
+	margin-left: 20px;
+	margin-top: 20px;
+	float: left;
+	height: 500px;
+}
+.stories-box:hover{
+	box-shadow: 0 0 2px 1px green;
+}
+
+.student-img{
+	background-color: transparent;
+}
+.student-photo{
+	width: 50%;
+    height: 200px;
+    border-radius: 400px;
+    margin-left: 80px;
+}
+.stories-body{
+	text-align: center;
+}
+.student-name{
+	padding: 5px;
+}
+.student-post{
+	font-size: 20px;
+	color: #e8491d;
+}
+.student-post1{
+	font-size: 20px;
+	color: black;
+}
+.stories-info{
+	font-weight: bold;
+	text-decoration-line: underline;
+	color: red;
+	text-align: center;
+	font-size: 30px;
+	padding: 10px;
+}
+
+    </style>
 </body>
 </html>

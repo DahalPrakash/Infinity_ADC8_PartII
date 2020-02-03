@@ -1,9 +1,5 @@
 from django.test import TestCase
-from .models import Students
-from .models import Result
-from .models import Teachers
-from .models import Class
-from .models import Modules
+from .models import *
 
 # Create your tests here.
 
