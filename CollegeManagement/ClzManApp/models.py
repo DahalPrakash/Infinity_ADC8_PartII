@@ -75,4 +75,14 @@ class Modules(models.Model):
         else :
             return True
 
+#for pdf upload download
+
+class Book(models.Model):
+    title = models.CharField(max_length=100)
+    name = models.CharField(max_length=100)
+    pdf = models.FileField(upload_to="routine/PDF/")
+    
+    def __str__(self):
+        return self.title
+
 

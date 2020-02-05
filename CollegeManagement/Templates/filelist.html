@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!--
+<p>
+    <a href="{% url 'personal:upload' %}" class="btn btn-primary btn-sm">Upload</a>
+</p>
+-->
+<form method="GET" class="search-bar">
+  
+   <input type="text" class="form-control" name="q" placeholder="Search" id="id_q">
+    
+</form>
+{% if books %}
+<table class="table">
+    
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Name</th>
+            <th>Download</th>
+        </tr>
+    </thead>
+  
+    <tbody>
+       {% for book in books %}
+        <tr>
+            <td>{{book.title}}</td>
+            <td>{{book.name}}</td>
+            <td><a href="{{book.pdf.url}}">Download PDF</a></td>
+        </tr>        
+        {% endfor %}
+    </tbody>    
+    
+</table>
+
+{% else %}
+<div class="container">
+   <div class="row">
+       <div class="card-title">
+          <h1 class="card-body">No results !</h1> 
+       </div>
+   </div>
+    
+</div>
+{% endif %}
+
+<script type="text/javascript">
+document.getElementById('id_q').value = '{{query}}'
+</script>
+
+{% endblock %}
