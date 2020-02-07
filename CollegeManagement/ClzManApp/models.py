@@ -22,12 +22,12 @@ class Teachers(models.Model):
 
     def __str__(self):
         return self.TeacherName
-    #testing for result
+    #testing for teachers
     def teacher_name_blank_check(self):
         if self.TeacherName == " ":
-            return False
-        else :
             return True
+        else :
+            return False
 
 class Class(models.Model):
     ClassName = models.CharField(max_length=128)
@@ -39,10 +39,9 @@ class Class(models.Model):
     
     #testing for Class
     def class_name_blank_check(self):
-        if self.ClassName == " ":
-            return False
-        else :
-            return True
+        classcount = Class.objects.all().count()
+        return classcount
+           
 
 class Students(models.Model):
     StudentName=models.CharField(max_length=40)
@@ -55,10 +54,8 @@ class Students(models.Model):
         return self.StudentName
     #testing for students
     def student_name_blank_check(self):
-        if self.StudentName == " ":
-            return False
-        else :
-            return True
+        studentcount = Students.objects.all().count()
+        return studentcount
 
 
 class Modules(models.Model):
