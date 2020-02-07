@@ -44,10 +44,8 @@ def view_studentdata_save(request):
         get_all = request.POST
         get_StudentName = request.POST['student_StudentName']
         get_email = request.POST['student_email']
-        print(get_StudentID)
         get_standard = request.POST['student_standard']
-        print(type(get_StudentID))
-        student_obj = Students(StudentID=get_StudentID,StudentName=get_StudentName,email=get_email,standard=get_standard)
+        student_obj = Students(StudentName=get_StudentName,email=get_email,standard=get_standard)
         student_obj.save()
         return HttpResponse("<H1>Record Saved</H1>")
     else:

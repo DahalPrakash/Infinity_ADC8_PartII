@@ -21,7 +21,6 @@ class Teachers(models.Model):
 class Class(models.Model):
     ClassName = models.CharField(max_length=128)
     StudentGroupName = models.CharField(max_length=40)
-    teachers_class = models.ForeignKey(Teachers, on_delete=models.CASCADE, related_name='classes') 
     def __str__(self):
         return self.ClassName   #returns ClassName string when its object is being called
 
